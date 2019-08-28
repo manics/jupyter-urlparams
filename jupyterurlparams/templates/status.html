@@ -1,0 +1,23 @@
+{% extends "page.html" %}
+
+{% block params %}
+{{super()}}
+data-base-url="{{base_url | urlencode }}"
+data-paramsfile="{{ paramsfile | urlencode }}"
+data-params="{{ params | urlencode }}"
+data-path="{{ path | urlencode }}"
+{% endblock %}
+
+{% block site %}
+<div class="container">
+    <div class="page-header">
+        Storing parameters in file {{ paramsfile }} before sending you to <strong>{{ path }}...</strong>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{{super()}}
+<script src="{{ base_url }}urlparams/static/index.js?v={{ version }}">
+</script>
+{% endblock %}
