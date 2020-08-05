@@ -1,4 +1,7 @@
-# Jupyter URL Params
+# **Use https://github.com/manics/jupyter-notebookparams instead**
+
+
+## Jupyter URL Params
 
 Create a configuration file for Jupyter notebooks using URL parameters.
 
@@ -13,7 +16,7 @@ When you run the notebook the parameters will be displayed.
 https://mybinder.org/v2/gh/manics/jupyter-urlparams/master?urlpath=urlparams%3Fparamsfile%3Dconfig.json%26params%3D%7B%22a%22%3A1%2C%22b%22%3Afalse%7D%26urlpath%3Dtree%252Fexample.ipynb
 
 
-# URL Parameters
+## URL Parameters
 
 **paramsfile**: Path to the parameters file to be written
 
